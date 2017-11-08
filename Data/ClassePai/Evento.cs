@@ -2,18 +2,18 @@
 
 using System;
 
-namespace ClassePai{
+namespace Data.ClassePai{
     public abstract class Evento{
         public string Titulo { get; set; }
         public string Local { get; set; }
         public int Lotacao { get; set; }
-        public string Data { get; set; }
+        public DateTime Data { get; set; }
         public string Duracao { get; set; }
         public int Classificacao { get; set; }
         public Ingresso Ingresso { get; set; }
 
         public Evento(){}
-        public Evento(string titulo,string local, int lotacao, string data, string duracao, int classificacao, Ingresso ingresso){
+        public Evento(string titulo,string local, int lotacao, DateTime data, string duracao, int classificacao, Ingresso ingresso){
             Titulo = titulo;
             Local = local;
             Lotacao = lotacao;
