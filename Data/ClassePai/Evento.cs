@@ -1,7 +1,9 @@
 
 
-namespace Data{
-    public class Evento{
+using System;
+
+namespace ClassePai{
+    public abstract class Evento{
         public string Titulo { get; set; }
         public string Local { get; set; }
         public int Lotacao { get; set; }
@@ -21,5 +23,16 @@ namespace Data{
             Ingresso = ingresso;
         }
 
+        public virtual bool Cadastrar(){
+            
+            return false;
+        }
+        public virtual string Pesquisar(DateTime DataEvento){
+        return "";
+        }
+        public virtual string Pesquisar(string TituloEvento){
+        
+        return "";
+        }
     }
 }
