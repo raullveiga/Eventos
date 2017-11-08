@@ -21,5 +21,8 @@ namespace Data.ClassePai.ClasseFilhas
             Artista = artista;
             GeneroMusical = generoMusical;
         }
+        public override bool Cadastrar(){
+            return false;
+        }
     }
 }
