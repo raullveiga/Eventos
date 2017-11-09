@@ -1,6 +1,5 @@
-
-
 using System;
+using System.Collections.Generic;
 
 namespace Data.ClassePai{
     public abstract class Evento{
@@ -31,6 +30,8 @@ namespace Data.ClassePai{
         return "";
         }
         public virtual string Pesquisar(string TituloEvento){
+            
+            List<Evento> Evento;
         
         return "";
         }
