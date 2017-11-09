@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Data.ClassePai{
     public abstract class Evento{
-        public string Titulo { get; set; }
-        public string Local { get; set; }
-        public int Lotacao { get; set; }
-        public DateTime Data { get; set; }
-        public string Duracao { get; set; }
-        public int Classificacao { get; set; }
-        public Ingresso Ingresso { get; set; }
+        protected string Titulo { get; set; }
+        protected string Local { get; set; }
+        protected int Lotacao { get; set; }
+        protected DateTime Data { get; set; }
+        protected string Duracao { get; set; }
+        protected int Classificacao { get; set; }
+        protected Ingresso Ingresso { get; set; }
 
         public Evento(){}
         public Evento(string titulo,string local, int lotacao, DateTime data, string duracao, int classificacao, Ingresso ingresso){

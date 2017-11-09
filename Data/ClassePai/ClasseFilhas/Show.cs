@@ -68,7 +68,7 @@ namespace Data.ClassePai.ClasseFilhas
                 while ((t = src.ReadLine()) != null)
                 {
                     string[] txt = t.Split(';');
-                    if (txt[5] == TituloEvento)
+                    if (txt[7] == TituloEvento)
                         rt += t + "\n";
                 }
             }
