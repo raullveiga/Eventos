@@ -8,8 +8,19 @@ namespace Data.ClassePai.ClasseFilhas
     {
         public string Diretor { get; set; }
         public string[] Elenco { get; set; }
-
+        /// <summary>
+        /// Construtor vazio para instanciação
+        /// </summary>
         public Teatro() { }
+        /// <summary>
+        /// Construtor com os parametros necessários para funcionamento dos métodos.
+        /// </summary>
+        /// <param name="titulo">Passe titulo como String</param>
+        /// <param name="local">Passe local como string</param>
+        /// <param name="lotacao"></param>
+        /// <param name="data">Passe lotacao como int</param>
+        /// <param name="duracao">Passe data como DateTime</param>
+        /// <param name="classificacao">Passe classificacao como int</param>
         public Teatro(string titulo, string local, int lotacao, string duracao, int classificacao, DateTime data, string diretor, string[] elenco)
         {
             base.Titulo = titulo;
@@ -21,6 +32,10 @@ namespace Data.ClassePai.ClasseFilhas
             Diretor = diretor;
             Elenco = elenco;
         }
+        /// <summary>
+        /// O método Cadastrar grava os dados do objeto em teatro.csv
+        /// </summary>
+        /// <returns></returns>
         public override bool Cadastrar()
         {
             bool rt = false;
@@ -56,6 +71,11 @@ namespace Data.ClassePai.ClasseFilhas
             }
             return rt;
         }
+        /// <summary>
+        /// O método Pesquisar, realiza uma busca em show.csv usando o dado passado como parâmetro de pesquisa
+        /// </summary>
+        /// <param name="TituloEvento">Passe TituloEvento como string</param>
+        /// <returns>Retorna todas as linhas do arquivo que contenham o parâmetro passado</returns>
         public override string Pesquisar(string TituloEvento)
         {
             string rt = "Nada encontrado";
@@ -82,6 +102,11 @@ namespace Data.ClassePai.ClasseFilhas
             }
             return rt;
         }
+        /// <summary>
+        /// O método Pesquisar, realiza uma busca em show.csv usando o dado passado como parâmetro de pesquisa
+        /// </summary>
+        /// <param name="TituloEvento">Passe DataEvento como DateTime</param>
+        /// <returns>Retorna todas as linhas do arquivo que contenham o parâmetro passado</returns>
         public override string Pesquisar(DateTime DataEvento)
         {
             string rt = "Nada encontrado";
@@ -108,6 +133,11 @@ namespace Data.ClassePai.ClasseFilhas
             }
             return rt;
         }
+        /// <summary>
+        /// O método Pesquisar, realiza uma busca em show.csv usando o dado passado como parâmetro de pesquisa
+        /// </summary>
+        /// <param name="TituloEvento">Passe ator como string</param>
+        /// <returns>Retorna todas as linhas do arquivo que contenham o parâmetro passado</returns>
         public string PesquisarAtor(string ator){
             string rt = "Nada encontrado";
             string t;
